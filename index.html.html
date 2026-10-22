@@ -1,0 +1,102 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+  <title>AI Tools hub</title>
+  <style>
+    body (
+       margin: 0;
+       font-family: Arial, sans-serif;
+       background: #101426;
+       color: white; 
+       text-align: center;
+      )
+      header (
+        padding: 35x 15x;
+        background: #202b50;
+      )
+      h1 ( color: #66e3ff; )
+      input (
+        padding: 12px;
+        width: 75%;
+        max width: 350px;
+        border-radius: 8px;
+        border: none;
+      ) 
+      .tool (
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px:
+        padding: 25px;
+      )
+      .card (
+        background: #202b50:
+        padding: 22px;
+        width: 220px;
+        border-radius: 14px;
+      )
+      a ( color: #66e3ff; )
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1> AI Tools Hub</h1>
+      <p>Discover amazing AI tools in
+  one place!</p>
+      <input id="search"
+ placeholder="Search AI tools...">
+   <header>
+   <div class="tools" id="tools"> 
+   <div class="card>
+     <h2> AI Video</h2>
+     <p>Explore tools for creating
+ videos.<p>
+       <a
+ href="https://www.capcut.com/"
+ target="_blank">Explore</a>
+     </div>
+     <div class="card">
+       <h2> AI Voice</h2>
+       <p>Discover image creation
+tools.</p>
+       <a
+ href="https://www.canva.com/"
+ target="_blank">Explore</a>
+     </div>
+     <div class="card">
+       <h2> AI Voice</h2>
+       <p>Find tools for voiceovers.</
+ p>
+       <a
+ href="https://elevenlabs.io/"
+ target="_blank">Explore</a>
+     </div>
+   </div>
+   <script>
+     const search =
+ document.getElementById("search");
+     const cards =
+ document.querySelectorAll(".card");
+     search.addEventListener("input",
+ function () (
+       cards.forEach(function (card) (
+         card.style.display =
+ card.innerText.toLoverCase().includes
+ (
+ search.value.toLowverCase()
+           ) ? "" : "none";
+       ));
+     ));
+   </script>
+ </body>
+ <html>
+
+
+           
+           
+     
+         
